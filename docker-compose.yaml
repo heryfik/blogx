@@ -5,8 +5,8 @@ services:
     image: mysql
     restart: always
     ports:
-        - "3306"
-    enviroment:
+        - 3306:3306
+    environment:
         MYSQL_DATABASE: blogx
         MYSQL_ROOT_PASSWORD: blogx
         MYSQL_USER: blogx
